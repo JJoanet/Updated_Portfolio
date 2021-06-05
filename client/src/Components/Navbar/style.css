@@ -1,0 +1,112 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+#logo{
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+.navbar{
+    background-color: rgba(93, 92, 97, 0.8);
+}
+#name{
+    color: #D1C0A8;
+    font-size: 90px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#title{
+    display: flex;
+}
+.nav{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: auto;
+}
+.inactive{
+    text-decoration: none;
+    color: #D1C0A8;
+    border-bottom: 10px solid #D1C0A8;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.active{
+    text-decoration: none;
+    color: #D1C0A8;
+    border-bottom: 10px solid #659DBD;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+a:hover{
+    color: #659DBD;
+}
+@media (max-width: 600px) {
+    #name{
+        display: none;
+    }
+    #title{
+        justify-content: space-around;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 0px;
+    }
+    .nav{
+        justify-content: space-around;
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .inactive{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: 20px !important;
+    }
+    .active{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 1200px) {
+    #name{
+        display: none;
+    }
+    #title{
+        justify-content: space-around;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 0px;
+    }
+    .nav{
+        justify-content: space-around;
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .inactive{
+        font-size: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .active{
+        font-size: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+} 

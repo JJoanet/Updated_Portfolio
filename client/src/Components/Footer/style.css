@@ -1,0 +1,10 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+.footer{
+    background-color: rgba(93, 92, 97, 0.8);
+    box-sizing: unset !important;
+}
+#footertext{
+    color: #D1C0A8;
+}
