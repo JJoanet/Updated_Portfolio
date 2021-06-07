@@ -27,3 +27,7 @@ Your app should now be running on <http://localhost:3000>. The Express server sh
 ## Deployment (Heroku)
 
 To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+
+live feed by Michelle Fosse from the Noun Project
+
+html by Vijay Sekhar Sadineni from the Noun Project

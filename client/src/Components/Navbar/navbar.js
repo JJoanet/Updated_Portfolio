@@ -1,10 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 function Navbar() {
     return (
-        <nav className="navbar fixed-top">
+        <nav className="navbar static-top">
             <div id="title" className="align-items-center">
                 <img id="logo" src="./LogoImg.png" alt="JJ" />
                 <p id="name">Jeremy Joanet</p>
@@ -19,6 +18,8 @@ function Navbar() {
                                     ? "active"
                                     : "inactive"
                             }
+                            //This onClick was added because the site wasn't reflecting the class change from inactive -> active
+                            onClick={() => {window.location.href="/"}}
                         >
                             Home
             </Link>
@@ -27,6 +28,8 @@ function Navbar() {
                         <Link
                             to="/Projects"
                             className={window.location.pathname === "/Projects" ? "active" : "inactive"}
+                            //This onClick was added because the site wasn't reflecting the class change from inactive -> active
+                            onClick={() => {window.location.href="/Projects"}}
                         >
                             Projects
             </Link>
@@ -35,6 +38,8 @@ function Navbar() {
                         <Link
                             to="/Resume"
                             className={window.location.pathname === "/Resume" ? "active" : "inactive"}
+                            //This onClick was added because the site wasn't reflecting the class change from inactive -> active
+                            onClick={() => {window.location.href="/Resume"}}
                         >
                             Resume
             </Link>
@@ -43,6 +48,8 @@ function Navbar() {
                         <Link
                             to="/Contact"
                             className={window.location.pathname === "/Contact" ? "active" : "inactive"}
+                            //This onClick was added because the site wasn't reflecting the class change from inactive -> active
+                            onClick={() => {window.location.href="/Contact"}}
                         >
                             Contact
             </Link>

@@ -1,0 +1,42 @@
+#featured{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tertiary{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textblock{
+    background-color: #D1C0A8;
+    border: #8A8A8A solid 5px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Oswald", sans-serif;
+}
+
+.card{
+    background-color: rgba(93, 92, 97, 0.8);
+}
+
+.linkblock{
+    display: flex;
+    justify-content: center;
+}
+
+.codeicon{
+    height: 33px;
+    width: 36px;
+}
+
+.liveicon{
+    height: 33px;
+    width: 50px;
+}
