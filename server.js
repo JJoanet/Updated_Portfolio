@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const router = express.Router();
 require('dotenv').config();
 
@@ -72,10 +72,10 @@ router.post('/Contact', (req, res) => {
 
 
 // Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/inquiries",
-  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
-);
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/inquiries",
+//   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
+// );
 
 // Use apiRoutes
 // app.use("/api", apiRoutes);
