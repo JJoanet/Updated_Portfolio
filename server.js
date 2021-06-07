@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-// const mongoose = require("mongoose");
 const router = express.Router();
 require('dotenv').config();
 
@@ -10,8 +9,6 @@ const cors = require('cors')
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-
-// const apiRoutes = require("./routes/apiRoutes");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -67,18 +64,6 @@ router.post('/Contact', (req, res) => {
     }
   });
 });
-
-
-
-
-// Connect to the Mongo DB
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://localhost/inquiries",
-//   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
-// );
-
-// Use apiRoutes
-// app.use("/api", apiRoutes);
 
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
