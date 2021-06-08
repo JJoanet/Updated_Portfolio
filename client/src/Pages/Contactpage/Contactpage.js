@@ -1,8 +1,14 @@
-import React, {component} from 'react';
+import React from 'react';
 import './style.css';
 
 const Contact = () => {
     const [status, setStatus] = React.useState("Submit");
+    const [firstFocused, setFirstFocused] = React.useState(false);
+    const [lastFocused, setLastFocused] = React.useState(false);
+    const [numberFocused, setNumberFocused] = React.useState(false);
+    const [emailFocused, setEmailFocused] = React.useState(false);
+    const [messageFocused, setMessageFocused] = React.useState(false);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus("Sending...");
@@ -25,50 +31,53 @@ const Contact = () => {
         let result = await response.json();
         alert(result.status);
     }
+
     return (
-        <div className="row">
-            <div className="row my-5 text-center d-flex justify-content-around" id="iconlist">
-                <a className="col-sm-11 col-md-3" href="" rel="noreferrer" target="_blank"><img id="emailicon" src="Email_Icon.png" alt="Email" /></a>
-                <a className="col-sm-11 col-md-3" href="https://www.linkedin.com/in/jeremy-joanet-1a3a2a204/" rel="noreferrer" target="_blank"><img id="linkedinicon" src="Linkedin.png" alt="Linkedin" /></a>
-                <a className="col-sm-11 col-md-3" href="https://github.com/Vygoth" rel="noreferrer" target="_blank"><img id="githubicon" src="GithubIconProfile.png" alt="Github" /></a>
-            </div>
+        <div className="row my-5 inputcontainer d-flex justify-content-around">
             <div className="row">
                 <div>
                     <form onSubmit={handleSubmit}>
-                    <div clasNames="input-group">
-                        <span className="input-group-text">First and last name</span>
-                        <input id="first_name" 
+                    <div className="mx-3 mb-3">
+                        <span className="input-group-text descriptor">First and last name</span>
+                        <input id="first_name"
+                                placeholder="First Name" 
                                 type="text" 
                                 aria-label="First name" 
-                                className="form-control"/>
-                        <input id="last_name" 
+                                className="form-control inputfield"/>
+                        <input id="last_name"
+                                placeholder="Last Name" 
                                 type="text" 
                                 aria-label="Last name" 
-                                className="form-control"/>
+                                className="form-control inputfield"/>
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                    <div className="mx-3 mb-3">
+                        <span className="input-group-text descriptor" id="inputGroup-sizing-default">Phone:</span>
                         <input type="number"
+                                placeholder="(000) 000-0000"
                                 id="phone_number" 
-                                class="form-control" 
+                                className="form-control inputfield" 
                                 aria-label="Sizing example input" 
                                 aria-describedby="inputGroup-sizing-default"/>
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                    <div className="mx-3 mb-3">
+                        <span className="input-group-text descriptor" id="inputGroup-sizing-default">Email:</span>
                         <input type="text" 
                                 id="user_email"
-                                class="form-control" 
+                                placeholder="Example@Email.com"
+                                className="form-control inputfield" 
                                 aria-label="Sizing example input" 
                                 aria-describedby="inputGroup-sizing-default"/>
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-text">With textarea</span>
-                        <textarea class="form-control"
+                    <div className="mx-3 mb-3">
+                        <span className="input-group-text descriptor">Message:</span>
+                        <textarea className="form-control inputfield"
+                                    placeholder="Your message here!"
                                     id="message" 
                                     aria-label="With textarea"></textarea>
                     </div>
-                    <button type="submit" className="btn btn-outline-secondary col-sm-10 mx-2 my-2">{status}</button>
+                    <div className="d-flex justify-content-around">
+                        <button type="submit" className="btn submitbtn">{status}</button>
+                    </div>
                     </form>
                 </div>
             </div>

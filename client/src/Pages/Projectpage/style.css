@@ -40,3 +40,6 @@
     height: 33px;
     width: 50px;
 }
+.projectcontainer{
+    --bs-gutter-x: 0rem;
+}

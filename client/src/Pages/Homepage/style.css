@@ -22,6 +22,14 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+#emailicon{
+    height: 75px;
+    width: 75px;
+}
+#linkedinicon{
+    height: 75px;
+    width: 283px;
+}
 @media (max-width: 992px){
     .imagebackground{
         width: 90% !important;

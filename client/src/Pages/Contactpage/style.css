@@ -1,16 +1,21 @@
-#emailicon{
-    height: 75px;
-    width: 75px;
-}
-#linkedinicon{
-    height: 75px;
-    width: 283px;
-}
 #githubicon{
     width: 75px;
     height: 75px;
 }
-/* #iconlist{
-    display: flex;
-    justify-content: space-around;
-} */
+.inputcontainer{
+    --bs-gutter-x: 0rem;
+}
+.submitbtn{
+    width: 80%;
+    color: #5d5c61;
+    background-color: #D1C0A8;
+}
+.descriptor{
+    background-color: #5d5c61;
+    color: #D1C0A8;
+    border-color: #5d5c61;
+}
+.inputfield{
+    background-color: #D1C0A8;
+    border-color: #5d5c61;
+}

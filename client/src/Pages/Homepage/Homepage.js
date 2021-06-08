@@ -9,6 +9,10 @@ function Home() {
                     <img className="image col-sm-12" src="./Jeremy.png" class="card-img" alt="..." />
                 </div>
             </div>
+            <div className="row my-5 text-center d-flex justify-content-around" id="iconlist">
+                <a className="col-sm-11 col-md-3" href="https://www.linkedin.com/in/jeremy-joanet-1a3a2a204/" rel="noreferrer" target="_blank"><img id="linkedinicon" src="Linkedin.png" alt="Linkedin" /></a>
+                <a className="col-sm-11 col-md-3" href="https://github.com/Vygoth" rel="noreferrer" target="_blank"><img id="githubicon" src="GithubIconProfile.png" alt="Github" /></a>
+            </div>
             <div className="card homebio">
                 <div className="card-body">
                     Born and raised in Chicago, I have walked many miles in many shoes.

@@ -83,7 +83,7 @@ function Projectlist() {
     }, [])
 
     return (
-        <div className ="row">
+        <div className ="row projectcontainer">
             <div className="card my-5 col-sm-11" id="featured">
                 <div className="row g-0">
                     <div className="col-md-11 text-center textblock my-3">
