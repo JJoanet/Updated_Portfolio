@@ -30,6 +30,9 @@ body{
     height: 75px;
     width: 283px;
 }
+#iconlist{
+    --bs-gutter-x: 0rem !important;
+}
 @media (max-width: 992px){
     .imagebackground{
         width: 90% !important;
