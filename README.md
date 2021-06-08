@@ -22,4 +22,4 @@ I built this to not only reimagine my portfolio, but to also build it using Reac
 Simply navigate to the deployed heroku site for easy access.
 
 ## Screenshot
-![Screenshot](./UpdatedPortfolio.PNG)
+![Screenshot](./client/public/UpdatedPortfolio.PNG)
