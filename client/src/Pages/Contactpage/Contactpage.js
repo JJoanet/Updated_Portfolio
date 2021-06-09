@@ -3,11 +3,6 @@ import './style.css';
 
 const Contact = () => {
     const [status, setStatus] = React.useState("Submit");
-    const [firstFocused, setFirstFocused] = React.useState(false);
-    const [lastFocused, setLastFocused] = React.useState(false);
-    const [numberFocused, setNumberFocused] = React.useState(false);
-    const [emailFocused, setEmailFocused] = React.useState(false);
-    const [messageFocused, setMessageFocused] = React.useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
