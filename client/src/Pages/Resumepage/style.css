@@ -1,8 +1,11 @@
 #resume{
+    height: 100%;
+}
+#resumecontainer{
+    height: 900px;
+    width: 80%;
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    max-width: 1200px !important;
 }

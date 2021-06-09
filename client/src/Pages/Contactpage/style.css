@@ -19,3 +19,9 @@
     background-color: #D1C0A8;
     border-color: #5d5c61;
 }
+#email{
+    color: #D1C0A8;
+}
+.form-control:focus{
+    background-color: #659DBD;
+}
