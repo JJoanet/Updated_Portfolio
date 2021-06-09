@@ -1,33 +1,25 @@
-# Create React Express App
+## Live Deploy
+https://jjj-portfolio.herokuapp.com/Resume
 
-## About This Boilerplate
+# Updated Portfolio
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+# Contact
+Github:
+Vygoth
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+Email:
+JeremyJoanet@protonmail.com
 
-## Starting the app locally
+## Description
+I built this to not only reimagine my portfolio, but to also build it using React as a foundation. Porfolio 2.0 is not only more visually appealing and less distracting, its also faster, more organized, and includes better functionality. Featuring a home section with a pic, bio, and github / linkedin links, a project section featuring a mapped array of some of my github projects and associated links, a resume section with my resume, and a contact page that includes not only my contact information, but a functional contact form that emails me with user submissions(which is broken on heroku, thanks heroku).
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+## Table of Contents
+- [Usage](#Usage)
+- [Credits](#Credits)
+- [Screenshot](#Screenshot)
 
-```
-npm install
-```
+## Usage
+Simply navigate to the deployed heroku site for easy access.
 
-This should install node modules within the server and the client folder.
-
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
-
-live feed by Michelle Fosse from the Noun Project
-
-html by Vijay Sekhar Sadineni from the Noun Project
+## Screenshot
+![Screenshot](./client/public/UpdatedPortfolio.PNG)
