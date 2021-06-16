@@ -72,8 +72,8 @@ function Projectlist() {
         setProjectList(allProjects)
         const featuredProject = {
             name: "Stage Coach",
-            liveurl: "http://www.google.com",
-            sourceurl: "www.google.com",
+            liveurl: "https://northwestern-stagecoach.herokuapp.com/",
+            sourceurl: "https://github.com/MattReisdorf/StageCoach",
             description: `This application was created to help bridge the gap between small musical venues and local artists. 
             It was built using React, MySQL, Node, Express, and dotenv. This application utilizes an MVC structure to render database calls 
             and dynamically display react pages and components. 

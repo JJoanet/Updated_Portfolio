@@ -33,6 +33,29 @@ body{
 #iconlist{
     --bs-gutter-x: 0rem !important;
 }
+.main-skill-container{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.description-container{
+    padding-bottom: 0;
+}
+.skill-description{
+    color: #D1C0A8;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill-image{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media (max-width: 992px){
     .imagebackground{
         width: 90% !important;
