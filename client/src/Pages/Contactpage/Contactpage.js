@@ -1,30 +1,43 @@
 import React from 'react';
 import './style.css';
+import ReCAPTCHA from 'react-google-recaptcha';
+require('dotenv').config();
+
 
 const Contact = () => {
     const [status, setStatus] = React.useState("Submit");
+    const [captchaStatus, setCaptchaStatus] = React.useState(false)
 
     const handleSubmit = async (e) => {
+        console.log(captchaStatus)
         e.preventDefault();
-        setStatus("Sending...");
-        const { first_name, last_name, user_email, message, phone_number} = e.target.elements;
-        let details = {
-            first_name: first_name.value,
-            last_name: last_name.value,
-            user_email: user_email.value,
-            phone_number: phone_number.value,
-            message: message.value
-        };
-        let response = await fetch("/Contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(details),
-        });
-        setStatus("Submit");
-        let result = await response.json();
-        alert(result.status);
+        if (captchaStatus === true) {
+            setStatus("Sending...");
+            const { first_name, last_name, user_email, message, phone_number} = e.target.elements;
+            let details = {
+                first_name: first_name.value,
+                last_name: last_name.value,
+                user_email: user_email.value,
+                phone_number: phone_number.value,
+                message: message.value
+            };
+            let response = await fetch("/Contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json;charset=utf-8",
+                },
+                body: JSON.stringify(details),
+            });
+            setStatus("Submit");
+            let result = await response.json();
+            alert(result.status);
+            if(result.status === 'Message Sent'){
+                return window.location.assign('/Contact')
+            }
+        } else if (captchaStatus === false) {
+            alert(`Please verify you're not a robot.`)
+        }
+
     }
 
     return (
@@ -75,8 +88,14 @@ const Contact = () => {
                                     id="message" 
                                     aria-label="With textarea"></textarea>
                     </div>
-                    <div className="d-flex justify-content-around">
-                        <button type="submit" className="btn submitbtn">{status}</button>
+                    <div className="d-flex justify-content-around row">
+                        <div className="col-sm-11 mb-3" id="captchaBox">
+                            <ReCAPTCHA
+                                sitekey="6LfW3VcbAAAAAE90mO5idWzb3KwL5EQ9u5ZlKJ_A"
+                                onChange={() => setCaptchaStatus(true)}
+                            />
+                        </div>
+                        <button type="submit" className="btn submitbtn col-sm-11">{status}</button>
                     </div>
                     </form>
                 </div>
