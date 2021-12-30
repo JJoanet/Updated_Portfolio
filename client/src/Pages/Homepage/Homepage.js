@@ -49,7 +49,7 @@ function Home() {
             <div className="row my-5 text-center d-flex justify-content-around" id="iconlist">
                 <a className="col-sm-11 col-md-3" href="https://www.linkedin.com/in/jeremy-joanet-1a3a2a204/" rel="noreferrer" target="_blank"><img id="linkedinicon" src="Linkedin.png" alt="Linkedin" /></a>
                 <a className="col-sm-11 mb-4" id="email" href="mailto:jeremyjoanet@protonmail.com?subject=Email from Portfolio"><h1>JeremyJoanet@protonmail.com</h1></a>
-                <a className="col-sm-11 col-md-3" href="https://github.com/Vygoth" rel="noreferrer" target="_blank"><img id="githubicon" src="GithubIconProfile.png" alt="Github" /></a>
+                <a className="col-sm-11 col-md-3" href="https://github.com/JJoanet" rel="noreferrer" target="_blank"><img id="githubicon" src="GithubIconProfile.png" alt="Github" /></a>
             </div>
             <div className="card homebio">
                 <div className="card-body">

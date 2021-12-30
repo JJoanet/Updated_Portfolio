@@ -9,12 +9,12 @@ function Projectlist() {
         const allProjects = [
             {
                 name: "Unify",
-                liveurl: "https://vygoth.github.io/Unify/",
-                sourceurl: "https://github.com/Vygoth/Unify",
+                liveurl: "https://jjoanet.github.io/Unify/",
+                sourceurl: "https://github.com/JJoanet/Unify",
                 description: `Serving as the project manager for this application, it was built as a proof-of-concept to help bridge workers with unions. 
                 It utilizes multiple API’s, including Google Maps, a Google scraper, and a geolocator. 
                 We built this using Materialize for our CSS and jQuery for our JavaScript.  We were able to complete our concept build in 5 days, start to finish. Note:
-                API keys are not linked on this deployed site for security purposes.
+                API keys are not linked on this deployed site for security purposes. Please note, google API functionality at one point was operational, lack of site maintenance has changed that.
                 `,
             },
             {
@@ -30,32 +30,32 @@ function Projectlist() {
             {
                 name: "Tech Blog",
                 liveurl: "https://blog-site-14.herokuapp.com/",
-                sourceurl: "https://github.com/Vygoth/14-Tech-Blog",
+                sourceurl: "https://github.com/JJoanet/14-Tech-Blog",
                 description: `A nifty little blog site, users can create accounts, make posts, comment on other posts and see their posts on their account dashboard.`,
             },
             {
                 name: "Password Generator",
-                liveurl: "https://vygoth.github.io/Password-Generator/",
-                sourceurl: "https://github.com/Vygoth/Password-Generator",
+                liveurl: "https://jjoanet.github.io/Password-Generator/",
+                sourceurl: "https://github.com/JJoanet/Password-Generator",
                 description: `A password generator! Creates a random string of characters based on user selection for a random password.`,
             },
             {
                 name: "Readme Generator",
-                liveurl: "https://github.com/Vygoth/ReadMeGenerator",
-                sourceurl: "https://github.com/Vygoth/ReadMeGenerator",
+                liveurl: "https://github.com/JJoanet/ReadMeGenerator",
+                sourceurl: "https://github.com/JJoanet/ReadMeGenerator",
                 description: `A command line application that allows users to easily create a Readme after a series of inquirer prompts.`,
             },
             {
                 name: "Weather Dashboard",
-                liveurl: "https://vygoth.github.io/Weather-Dashboard/",
-                sourceurl: "https://github.com/Vygoth/Weather-Dashboard",
+                liveurl: "https://jjoanet.github.io/Weather-Dashboard/",
+                sourceurl: "https://github.com/JJoanet/Weather-Dashboard",
                 description: `A handy little weather tracker that utilizes Open Weather's API to allow users to search by city name, 
                 and receive the forecast for the current day, plus a 5 day future forecast. Previous city searches are saved for future use.`,
             },
             {
                 name: "Work Day Scheduler",
-                liveurl: "https://vygoth.github.io/Work-Day-Scheduler/",
-                sourceurl: "https://github.com/Vygoth/Work-Day-Scheduler",
+                liveurl: "https://jjoanet.github.io/Work-Day-Scheduler/",
+                sourceurl: "https://github.com/JJoanet/Work-Day-Scheduler",
                 description: `This application allows users to save notes for each hour of their work day, 
                 it also tracks the current time to color coat time blocks if the associated block's 
                 time has passed, is current, or has yet to pass.`,
@@ -63,7 +63,7 @@ function Projectlist() {
             {
                 name: "Fitness Tracker",
                 liveurl: "https://northwestern-fitness-tracker.herokuapp.com/",
-                sourceurl: "https://github.com/Vygoth/Fitness_Tracker",
+                sourceurl: "https://github.com/JJoanet/Fitness_Tracker",
                 description: `This application allows users to add completed exercises to a saved workout. 
                 This saved workout will tally up their workout's duration, the amount of exercises performed, the total weight lifted, total sets and total reps. 
                 Users can then view the dashboard to see their total weight and duration tracked over time.`,
