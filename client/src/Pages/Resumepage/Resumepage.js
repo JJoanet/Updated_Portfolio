@@ -14,7 +14,7 @@ function Resume() {
     if(pageRendered) {
         resumecontainer = (
             <div id="resumecontainer" className="my-5">
-                <object data="./JeremyJoanetResumePortfolio.pdf" type="application/pdf" width="100%" height="100%">
+                <object data="./JeremyJ.Joanet.pdf" type="application/pdf" width="100%" height="100%">
                     <h1 className="text-center">Looks like the embeded PDF failed to render, sorry about that!</h1>
                 </object>
             </div>

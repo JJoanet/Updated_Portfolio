@@ -4,7 +4,7 @@ const router = express.Router();
 require('dotenv').config();
 
 
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 const cors = require('cors')
 
 const PORT = process.env.PORT || 3001;
@@ -23,20 +23,20 @@ if (process.env.NODE_ENV === "production") {
 
 app.use('/', router);
 
-const contactEmail = nodemailer.createTransport({
-  service: "gmail", auth: {
-    user: process.env.EMAIL,
-    pass: process.env.EMAIL_PW
-  }
-});
+// const contactEmail = nodemailer.createTransport({
+//   service: "gmail", auth: {
+//     user: process.env.EMAIL,
+//     pass: process.env.EMAIL_PW
+//   }
+// });
 
-contactEmail.verify((error) => {
-  if(error) {
-    console.log(error);
-  } else{
-    console.log("Email successfully verified.")
-  }
-})
+// contactEmail.verify((error) => {
+//   if(error) {
+//     console.log(error);
+//   } else{
+//     console.log("Email successfully verified.")
+//   }
+// })
 
 router.post('/Contact', (req, res) => {
   console.log(req.body)

@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Contactpage from "./Pages/Contactpage/Contactpage"; 
+// import Contactpage from "./Pages/Contactpage/Contactpage"; 
 import Homepage from "./Pages/Homepage/Homepage"; 
 import Projectpage from "./Pages/Projectpage/Projectpage"; 
 import Resumepage from "./Pages/Resumepage/Resumepage"; 
