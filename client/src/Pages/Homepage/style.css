@@ -56,6 +56,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+#githubicon{
+    width: 25%;
+}
 @media (max-width: 992px){
     .imagebackground{
         width: 90% !important;
