@@ -68,16 +68,24 @@ function Projectlist() {
                 This saved workout will tally up their workout's duration, the amount of exercises performed, the total weight lifted, total sets and total reps. 
                 Users can then view the dashboard to see their total weight and duration tracked over time.`,
             },
+            {
+                name: "Stage Coach",
+                liveurl: "https://northwestern-stagecoach.herokuapp.com/",
+                sourceurl: "https://github.com/MattReisdorf/StageCoach",
+                description: `This application was created to help bridge the gap between small musical venues and local artists. 
+                It was built using React, MySQL, Node, Express, and dotenv. This application utilizes an MVC structure to render database calls 
+                and dynamically display react pages and components. 
+                Data from this site is stored with Jaws on Heroku. This application features user password encryption with bcrypt.`
+            }
         ]
         setProjectList(allProjects)
         const featuredProject = {
-            name: "Stage Coach",
-            liveurl: "https://northwestern-stagecoach.herokuapp.com/",
-            sourceurl: "https://github.com/MattReisdorf/StageCoach",
-            description: `This application was created to help bridge the gap between small musical venues and local artists. 
-            It was built using React, MySQL, Node, Express, and dotenv. This application utilizes an MVC structure to render database calls 
-            and dynamically display react pages and components. 
-            Data from this site is stored with Jaws on Heroku. This application features user password encryption with bcrypt.`
+            name: "Covid Conscious",
+            liveurl: "https://covidconscious.herokuapp.com/",
+            sourceurl: "https://github.com/justinHAYESdouglas/LiveCheap",
+            description: `This application allows the user to quickly get all pertinent information about a State's current Covid-19 situation. 
+            All information is accurate and refreshed on a daily basis. 
+            This application utilizes a mix of Node.js, Express.js, MySQL, dotenv, sequelize, require, Object Oriented Programming.`
         }
         setFeaturedProject(featuredProject)
     }, [])
